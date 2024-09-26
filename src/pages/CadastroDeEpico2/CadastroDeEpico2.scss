@@ -1,0 +1,39 @@
+#teste{
+    display: grid;
+    grid-template-rows: 70px auto;
+    grid-template-areas: "cabecalho"
+                         "main";
+}   
+
+#conteudoPrincipal
+{
+    grid-area: main;
+  .div1{
+    display: flex;
+    background-color: red;
+    width: 200px;
+  }
+  div{
+  
+  }
+  .div2{
+    background-color: green;
+    width: 200px;
+  }
+
+  .texto{
+    display: flex;
+    
+  }
+  .div3{
+    background-color: aqua;
+    width: 200px;
+  }
+  .div4{
+    background-color: yellow;
+    width: 100px;
+  }
+  .sm-1, sm-2{
+    width: 500px;
+  }
+}

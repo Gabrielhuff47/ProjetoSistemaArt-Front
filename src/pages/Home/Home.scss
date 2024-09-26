@@ -1,0 +1,16 @@
+.area {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 790px;
+    grid-template-areas: "cabecalho"
+                         "main";
+
+    background-color: #ccc;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+#home {
+    display: flex;
+    margin-left: 121px;
+}
