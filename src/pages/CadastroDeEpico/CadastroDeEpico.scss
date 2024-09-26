@@ -1,0 +1,108 @@
+.area {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 790px;
+    grid-template-areas: "cabecalho"
+                         "main";
+
+    background-color: white;
+    width: 100vw;
+    min-height: 100vh;
+}
+main{
+    display: grid;
+    grid-area: main;
+    margin-top: 24px;
+    grid-template-rows: 100px 80px 100px  300px auto;
+    grid-template-areas: "areaVazia Cadastro toast"
+                         "areaVazia DadosPitch toast"
+                         "areaVazia Descricao toast"
+                         "areaVazia DadosEpico toast"
+                         "areaVazia DadosUsuario toast";
+}
+section {
+    grid-area: Cadastro;
+}
+#Titulo{
+    margin-top: 13px;
+}
+#Subtitulo{
+    margin-top: 12px;
+}
+
+#DadosDoPitch{
+    grid-area: DadosPitch;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    
+    .InputPitch{
+        width: 229px;
+        display: flex;
+        justify-content: flex-end;
+        height: 48px;
+        margin-bottom: 0px;
+    }
+    
+}
+#Descrição{
+    width: 700px;
+    height: 76px;
+    display: flex;
+    grid-area: Descricao;
+}
+
+#DadosDoEpico{
+    display: grid;
+    grid-area: DadosEpico;
+    grid-template-rows: 50px 80px 80px;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+
+}
+#InputDados{
+    grid-area: main;
+    display: flex;
+    gap: 20px;
+    
+}
+#InputIdEpico{
+    width: 110px;
+}
+
+#InputNomeDoEpico{
+    width: 229px;
+}
+
+#InputData{
+    grid-area: footer;
+    display: flex;
+    gap: 20px;
+
+    #InputDataInicio,  #SelectSituacao {
+        width: 229px;
+    }
+    #InputDataFim{
+        width: 189px;
+    }
+
+}
+
+#DadosAtualizacao{
+    grid-area: DadosUsuario;
+    display: flex;
+    gap: 20px;
+    #InputUsuarioAtualizacao, #InputDataAtualizacao{
+        width: 204px;
+    }
+}
+
+#BotaoGravarExcluir{
+    grid-area: DadosUsuario;
+    display: flex;
+    margin-top: 60px;
+    margin-left: 20px;
+    gap: 20px
+}
+

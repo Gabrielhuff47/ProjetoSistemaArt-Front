@@ -1,0 +1,33 @@
+.card{
+    width: 230px;
+    height: 205px;
+    background-color: white;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+    grid-area: main;
+    display: grid;
+    margin-top: 39px;
+    margin-left: 34px;
+    img{
+        margin-top: 60px;
+        margin-left: 17px;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+    }
+}
+*{
+    font-family: "Inter", sans-serif;
+}
+.titulo{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 23px;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.texto{
+    font-size: 14px;
+    margin-left: 23px;
+}

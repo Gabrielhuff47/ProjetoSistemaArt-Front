@@ -1,0 +1,63 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    width: 100vw;
+    min-height: 100vh;
+}
+*{
+    font-family: "Inter", sans-serif;
+    font-size: normal;
+}
+
+.container{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 105px 290px auto;
+   grid-template-areas: "logo  " 
+                        "formulario" 
+                        "botao";
+   width: 487px;
+   height: 552px;
+   background-color: white;
+   border-radius: 16px;
+}
+
+.LogoBem{
+    grid-area: logo;
+    width: 300px;
+    height: auto;
+    margin: auto;
+    margin-top: 57px;
+}
+
+.Formulario{
+    grid-area: formulario;
+    margin: auto;
+    margin-top: 59px;
+}
+
+.Formulario>p{
+    font-size: 20px;
+}
+
+.button{
+    width: 295px;
+    margin: auto;
+    margin-top: 0;
+    grid-area: botao;
+}
+
+form{
+    width: 220px;
+}
+
+.InputEmail{
+    margin-bottom: 20px;
+}
+
+#toggle{
+    margin-top: 16px;
+}
